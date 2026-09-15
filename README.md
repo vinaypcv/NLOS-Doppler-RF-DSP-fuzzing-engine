@@ -1,11 +1,5 @@
 # NLOS Doppler RF DSP Fuzzing Engine
 
-!\[Language](https://img.shields.io/badge/C%2B%2B-17-blue)
-!\[Recorded throughput](https://img.shields.io/badge/Recorded\_throughput-47.28k\_frames%2Fs-brightgreen)
-!\[Recorded divergences](https://img.shields.io/badge/Final\_recorded\_divergences-0-blue)
-!\[Oracle threshold](https://img.shields.io/badge/Oracle\_threshold-5%25-orange)
-!\[Coverage slots](https://img.shields.io/badge/Final\_recorded\_coverage-232\_slots-orange)
-
 A C++ differential fuzzing prototype for a stateful RF DSP magnitude estimator. It combines **Z3-assisted valid-header generation, eight RF/protocol mutations, a shared-memory producer/consumer queue, AGC-aware fixed-point arithmetic, an FP64 reference, sanitizer instrumentation, and anomaly replay**.
 
 The engineering result is a demonstrated reduction in reported numerical divergences through AGC hardening, approximation calibration, and exclusion of low-amplitude inputs from differential evaluation. The final supplied terminal run records **143,076 frames in 3,026 ms with zero reported semantic divergences**.

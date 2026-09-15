@@ -1,0 +1,19 @@
+# Build directory and CMake artifacts
+build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Generated executables
+advanced_engine
+replay_engine
+
+# Runtime generated crash/anomaly logs
+crashes/
+*.bin
+
+# System / IDE files
+.vscode/
+.idea/
+.DS_Store
